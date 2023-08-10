@@ -304,4 +304,56 @@ template {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.promo {
+  min-height: 100vh;
+  background: url(../img/main_bg.jpg) center center/cover no-repeat;
+  padding: 205px;
+}
+.promo__title {
+  width: 535px;
+  margin-top: 10px;
+}
+.promo__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 205px;
+  margin-top: 25px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 44px;
+}
+.promo__link {
+  font-size: 14px;
+  color: #000;
+  font-weight: 700;
+}
+.promo__link:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.title {
+  font-style: bold;
+  font-size: 36px;
+  line-height: 60px;
+}
+.title__fs16 {
+  font-size: 16px;
+  line-height: 24px;
+}
+.title__fs48 {
+  font-size: 48px;
+}
+.title__fs14 {
+  font-size: 14px;
+  line-height: 21px;
 }/*# sourceMappingURL=style.css.map */
