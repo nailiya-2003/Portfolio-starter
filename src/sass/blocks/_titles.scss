@@ -1,5 +1,5 @@
 .title {
-    font-style: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 60px;
     &__fs16 {
@@ -12,5 +12,6 @@
     &__fs14 {
         font-size: 14px;
         line-height: 21px;
+        
     }
 }

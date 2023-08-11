@@ -6,9 +6,16 @@
         width: 535px;
         margin-top: 10px;
     }
+    &__subtitle {
+        position: relative;
+        @include before_circle;
+        padding-left: 10px;
+        z-index: 2;
+       
+    }
     &__btns {
         display: flex;
-        width: 205px;
+        width: 240px;
         margin-top: 25px;
         align-items: center;
         justify-content: space-between;

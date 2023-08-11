@@ -320,11 +320,27 @@ template {
   width: 535px;
   margin-top: 10px;
 }
+.promo__subtitle {
+  position: relative;
+  padding-left: 10px;
+  z-index: 2;
+}
+.promo__subtitle::before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  background-color: #FFA501;
+  border-radius: 100%;
+  position: absolute;
+  top: -25%;
+  left: 0;
+  z-index: -1;
+}
 .promo__btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 205px;
+  width: 240px;
   margin-top: 25px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -345,7 +361,7 @@ template {
 }
 
 .title {
-  font-style: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 60px;
 }
@@ -368,4 +384,72 @@ template {
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   height: 45px;
   padding: 12px 25px;
+}
+
+.sidepanel {
+  height: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 3;
+  top: 230px;
+  left: 50px;
+}
+.sidepanel__divider {
+  width: 2px;
+  height: 70px;
+  background-color: #000;
+}
+.sidepanel__text {
+  height: 150px;
+  width: 25px;
+}
+.sidepanel__text span {
+  display: block;
+  width: 150px;
+  height: 25px;
+  -webkit-transform: rotate(-90deg) translate(-30%, -260%);
+          transform: rotate(-90deg) translate(-30%, -260%);
+}
+
+.hamburger {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  height: 21px;
+  width: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  cursor: pointer;
+}
+.hamburger span {
+  width: 30px;
+  height: 3px;
+  background-color: #151812;
+  display: block;
+}
+.hamburger span.long {
+  width: 36px;
 }/*# sourceMappingURL=style.css.map */
