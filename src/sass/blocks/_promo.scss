@@ -10,13 +10,14 @@
         display: flex;
         width: 205px;
         margin-top: 25px;
-        justify-content: flex-start;
-        gap: 44px
+        align-items: center;
+        justify-content: space-between;
     }
     &__link {
+        display: block;
         font-size: 14px;
         color: #000;
-        font-weight: 700;
+        font-weight: 700;   
         &:hover {
             color: #000;
             text-decoration: none;
