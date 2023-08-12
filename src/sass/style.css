@@ -704,23 +704,39 @@ template {
 .resume__colum ul li::before {
   content: "";
   position: absolute;
-  height: 100%;
+  height: calc(100% + 16px);
   width: 1px;
   top: -16px;
   left: 0;
+  background-color: black;
+}
+.resume__item::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 43px;
+  top: 63px;
   background-color: black;
 }
 .resume__item-head {
   padding: 45px 0 0 100px;
   position: relative;
 }
+.resume__item-head .title {
+  text-align: left;
+  margin-bottom: 0;
+}
 .resume__item-body {
   margin-top: 12px;
   padding-left: 43px;
+  font-size: 12px;
+  font-weight: 500;
 }
 .resume__item-icon {
   position: absolute;
-  top: 0px;
+  top: 50%;
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
   left: 43px;
 }
 .resume__item-icon::before {
@@ -733,4 +749,14 @@ template {
   top: -25%;
   left: 0;
   z-index: -1;
+}
+.resume__item-icon img {
+  position: absolute;
+  top: 14px;
+  left: 17px;
+}
+.resume__item-location {
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 5px;
 }/*# sourceMappingURL=style.css.map */

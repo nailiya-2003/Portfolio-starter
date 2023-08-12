@@ -42,30 +42,54 @@
                 &::before {
                     content: '';
                     position: absolute;
-                    height: 100%;
+                    height: calc(100% + 16px);
                     width: 1px;
                     top: -16px;
                     left: 0;
                     background-color: black;
                 }
             }
-        }
-      
+        } 
     }
     &__item {
+        &::before {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 43px;
+            top: 63px;
+            background-color: black;
+        }
         &-head {
             padding: 45px 0 0 100px;
             position: relative;
+            .title {
+                text-align: left;
+                margin-bottom: 0;     
+            }
         }
         &-body {
             margin-top: 12px;
             padding-left: 43px;
+            font-size: 12px;
+            font-weight: 500;
         }
         &-icon {
             position: absolute;
-            top: 0px;
+            top: 50%;
+            transform: translateY(-40%);
             left: 43px;
-            @include before_circle
+            @include before_circle;
+            img {
+                position: absolute;
+                top: 14px;
+                left: 17px;
+            }
+        }
+        &-location {
+            font-size: 12px;
+            font-weight: 500;
+            margin-top: 5px;
         }
     }
 }
