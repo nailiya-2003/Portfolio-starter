@@ -1,0 +1,71 @@
+.resume {
+    padding-top: 120px;
+    .title {
+        text-align: center;
+    }
+    &__title {
+        @include before_circle;
+        position: relative;
+        &::before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__wrapper {
+        padding: 60px 72px 0px 72px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 143px
+    }
+    &__colum {
+        &-title {
+            text-align: left;
+            position: relative;
+            padding-left: 35px;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background-color: $main-color;
+                border-radius: 100%;
+                left: -7px;
+                transform: translateY(-50%);
+                top: 50%;
+            }
+        }
+        ul {
+            list-style: none;
+            li {
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    height: 100%;
+                    width: 1px;
+                    top: -16px;
+                    left: 0;
+                    background-color: black;
+                }
+            }
+        }
+      
+    }
+    &__item {
+        &-head {
+            padding: 45px 0 0 100px;
+            position: relative;
+        }
+        &-body {
+            margin-top: 12px;
+            padding-left: 43px;
+        }
+        &-icon {
+            position: absolute;
+            top: 0px;
+            left: 43px;
+            @include before_circle
+        }
+    }
+}
