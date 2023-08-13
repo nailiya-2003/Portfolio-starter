@@ -1,0 +1,18 @@
+.use {
+    padding-top: 120px;
+    .title {
+        text-align: center;
+    }
+    &__title {
+        position: relative;
+        @include before_circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__colum {
+        display: grid;
+        grid-template-columns: ;
+    }
+}

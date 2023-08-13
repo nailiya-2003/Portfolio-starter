@@ -759,4 +759,33 @@ template {
   font-size: 12px;
   font-weight: 500;
   margin-top: 5px;
+}
+
+.use {
+  padding-top: 120px;
+}
+.use .title {
+  text-align: center;
+}
+.use__title {
+  position: relative;
+}
+.use__title::before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  background-color: #FFA501;
+  border-radius: 100%;
+  position: absolute;
+  top: -25%;
+  left: 0;
+  z-index: -1;
+}
+.use__title:before {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.use__colum {
+  display: grid;
 }/*# sourceMappingURL=style.css.map */
