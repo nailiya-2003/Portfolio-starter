@@ -3,15 +3,6 @@
     .title {
         text-align: center;
     }
-    &__title {
-        @include before_circle;
-        position: relative;
-        &::before {
-            top: -6px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
     &__wrapper {
         padding: 60px 72px 0px 72px;
         display: grid;
