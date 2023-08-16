@@ -386,6 +386,28 @@ template {
 .title__fs20 {
   font-size: 20px;
 }
+.title__section-title {
+  position: relative;
+}
+.title__section-title::before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  background-color: #FFA501;
+  border-radius: 100%;
+  position: absolute;
+  top: -25%;
+  left: 0;
+  z-index: -1;
+}
+.title__section-title:before {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.title__section-subtitle {
+  text-align: center;
+}
 
 .btn {
   display: block;
@@ -650,26 +672,6 @@ template {
 .resume .title {
   text-align: center;
 }
-.resume__title {
-  position: relative;
-}
-.resume__title::before {
-  content: "";
-  width: 36px;
-  height: 36px;
-  background-color: #FFA501;
-  border-radius: 100%;
-  position: absolute;
-  top: -25%;
-  left: 0;
-  z-index: -1;
-}
-.resume__title::before {
-  top: -6px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
 .resume__wrapper {
   padding: 60px 72px 0px 72px;
   display: grid;
@@ -842,4 +844,52 @@ template {
   display: block;
   height: 14px;
   border-radius: 4px;
+}
+
+.portfolio {
+  padding-top: 120px;
+}
+.portfolio .title {
+  text-align: center;
+}
+.portfolio__wrapper {
+  display: grid;
+  margin-top: 60px;
+  grid-template: repeat(2, 280px)/repeat(4, 280px);
+  grid-auto-rows: 280px;
+  gap: 5px;
+}
+.portfolio__wrapper .vertical {
+  grid-row: 1/3;
+  grid-column: 4/5;
+}
+.portfolio__wrapper .horizontal {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+.portfolio__item img {
+  width: 100%;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.portfolio__item img:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.list {
+  padding-top: 60px;
+}
+.list__wrapper {
+  display: grid;
+  grid-template: 162px 162px/368px 368px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.list__wrapper-items {
+  display: grid;
+}
+.list .title__section-title {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,20 @@
+.list {
+    padding-top: 60px;
+    &__wrapper {
+        display: grid;
+        grid-template: 162px 162px/368px 368px;
+        justify-content: space-between;
+        &-items {
+            display: grid;
+            grid-template-rows: `
+            
+            .
+            
+            ;
+        }
+       
+    }
+    .title__section-title {
+        text-align: center;
+    }
+}
