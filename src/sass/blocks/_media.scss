@@ -10,7 +10,7 @@
 @media (max-width: 1200px) {
      .container {
          max-width: 90%;
-     }
+    }
      .promo {
         padding: 240px 100px;
     }
@@ -27,8 +27,12 @@
                 column-gap: 30px;
             }
         }
+     } 
+     .resume__wrapper {
+        padding: 70px 0px;
+        grid-template-columns: repeat(2, minmax(305px, 370px));
+        
      }
-    
 }
 @media (max-width: 992px) {
     .promo {
@@ -49,6 +53,12 @@
                 grid-template-columns: 18px 170px;
                 column-gap: 30px;
             }
+        }
+     } 
+     .resume {
+        &__wrapper {
+            grid-template-columns: repeat(2, minmax(305px, 370px));
+            gap: 80px;
         }
      } 
 }
@@ -129,7 +139,7 @@
             font-size: 30px;
         }
         &__wrapper {
-            grid-template-columns: 230px 300px;
+            grid-template-columns: 230px 280px;
             grid-template-rows: 420px;
             column-gap: 30px;
             row-gap: 10px;
@@ -148,8 +158,32 @@
                 column-gap: 23px;
             }
         }
-     } 
-} 
+     }
+     .resume {
+        &__wrapper {
+            grid-template-columns: repeat(2, minmax(200px, 304px));
+            gap: 40px;
+        }
+        &__item {
+            &-body {
+                padding-left: 40px;
+                font-size: 10px;
+            }
+            &-icon {
+                left: 30px;
+                &:before {
+                    width: 31px;
+                    height: 31px;
+                }
+            }
+            &-head {
+                padding: 45px 0 0 80px;
+                }
+            }
+        }
+     }
+    
+ 
     
 @media (max-width: 576px) {
     .promo {
@@ -223,5 +257,24 @@
             }
         }
      } 
+     .resume {
+        &__wrapper {
+            grid-template-columns: repeat(1, minmax(200px, 400px));
+            gap: 80px;
+            padding-left: 20px;
+        }
+        &__item {
+            &-body {
+                font-size: 11px;
+            }
+        }
+        
+     } 
+     .title__fs36 {
+        font-size: 30px;
+    }
+    .divider {
+        margin: 10px auto 0 auto;
+    }
 } 
    
