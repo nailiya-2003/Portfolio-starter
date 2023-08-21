@@ -33,6 +33,31 @@
         grid-template-columns: repeat(2, minmax(305px, 370px));
         
      }
+     .use {
+        &__colum {
+            grid-template-columns: repeat(auto-fit, 250px);
+            justify-content: space-around;
+            grid-auto-rows: minmax(70px, auto);
+        }
+        &__features {
+            grid-template-columns: repeat(auto-fit, 290px);
+            justify-content: space-around;
+        }
+     }
+     .portfolio {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 250px);
+            justify-content: space-around;
+            .horizontal, .vertical {
+                grid-column: unset;
+                grid-row: unset;
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+     }
 }
 @media (max-width: 992px) {
     .promo {
