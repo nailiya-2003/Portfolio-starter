@@ -114,7 +114,16 @@
         <div class="container">
             <div class="about__wrapper">
             <div class="about__photo">
-                <img src="img/naile.jpg" alt="about">
+                <!-- <img srcset = "img/naile-mob.jpg 403w, 
+                               img/naile.jpg 576w" 
+                     sizes="(max-width: 576px) 400px,
+                           (min-width: 577px) 576px" 
+                           src="img/naile.jpg" alt="about"> -->
+                           <picture>
+                            <source media="(max-width: 576px)" srcset="img/naile-mob.jpg">
+                            <source media="(min-width: 577px)" srcset="img/naile.jpg">
+                            <img src="img/naile.jpg" alt="about__photo">
+                           </picture>
             </div>
             <div class="about__descr"><h2 class="title title__fs16 about__title">Про меня</h2>
             <div class="title about__subtitle">Меня зовут Наиля</div>
