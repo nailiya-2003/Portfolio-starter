@@ -375,11 +375,15 @@
             </div>
         </div>
      </section> 
-     <!-- <section class="contacts">
+     <section class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
-                    <img src="img/naile.jpg" alt="contacts">
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/naile-mob.jpg">
+                        <source media="(min-width: 577px)" srcset="img/naile.jpg">
+                        <img src="img/naile.jpg" alt="contacts">
+                    </picture>
                 </div>
                 <div class="contacts__descr">
                     <h2 class="title title__fs16 contacts__title">Контакты</h2>
@@ -422,7 +426,7 @@
             </div>  
         </div>
     </div>
-     </section> -->
+     </section>
     <script src="js/script.js"></script>
 </body>
 </html>
